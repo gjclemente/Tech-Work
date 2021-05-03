@@ -1,0 +1,4 @@
+﻿  pch.cpp
+  Data Files Sample 5 - Create.cpp
+h:\c++ files\data files sample 5 - create\data files sample 5 - create\data files sample 5 - create.cpp(15): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Data Files Sample 5 - Create.vcxproj -> H:\C++ Files\Data Files Sample 5 - Create\Debug\Data Files Sample 5 - Create.exe

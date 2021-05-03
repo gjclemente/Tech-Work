@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Digital Binder</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Digital Binder CSS.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="title-head">Gabby Clemente - Digital Binder</div>
+
+    <div class="menu-bar">
+        <div class="menu">
+            <div class="box">
+                <div class="front face">
+                    <i class="fa fa-briefcase fa-4x"></i>
+                </div>
+                <div class="back face">
+                    <p>Potential<br />Employers</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="box">
+                <div class="front face">
+                    <i class="fa fa-file-text-o fa-4x"></i>
+                </div>
+                <div class="back face">
+                    <p>Cover Letter, Resume, Letters of Reference</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="box">
+                <div class="front face">
+                    <i class="fa fa-file-code-o fa-4x"></i>
+                </div>
+                <div class="back face">
+                    <p>Work <br />Samples</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="box">
+                <div class="front face">
+                    <i class="fa fa-quote-left fa-4x"></i>
+                </div>
+                <div class="back face">
+                    <p>Reflection</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="box">
+                <div class="front face">
+                    <i class="fa fa-folder-open-o fa-4x"></i>
+                </div>
+                <div class="back face">
+                    <p>Leadership <br />Certificates</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="box">
+                <div class="front face">
+                    <i class="fa fa-graduation-cap fa-4x"></i>
+                </div>
+                <div class="back face">
+                    <p>Education <br />Opportunities</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="employers">
+        <!--<div id="EmployersHeader">Potential Employers</div>-->
+
+        <input id="tab-1" type="radio" name="tabs" checked />
+        <label for="tab-1">Employer 1</label>
+
+        <input id="tab-2" type="radio" name="tabs" />
+        <label for="tab-2">Employer 2</label>
+
+        <input id="tab-3" type="radio" name="tabs" />
+        <label for="tab-3">Employer 3</label>
+
+        <div class="content">
+            <div id="content-1">
+                <h2>Employer 1: Principal Financial Group - Software Engineer</h2>
+                <span>
+                    <br />
+                    <br />
+                    <strong>Location:</strong>
+                    Des Moines, IA
+                    <br />
+                    <br />
+                    <strong>Job Description:</strong>
+                    Developing and maintaining front-end applications, back-end integrations, and vendor solutions, while using data to drive decisions and solutions.
+                    <br />
+                    <br />
+                    <strong>Salary:</strong>
+                    $51K- $90K
+                </span>
+            </div>
+
+            <div id="content-2">
+                <h2>Employer 2: Boeing - Programmer Analyst (Programmming/Analysis) (part time)</h2>
+                <span>
+                    <br />
+                    <br />
+                    <strong>Location:</strong>
+                    San Luis Obispo, CA
+                    <br />
+                    <br />
+                    <strong>Job Description:</strong>
+                    Provides assistance to design, program and execute simple test plans. Implements, documents and maintains basic computing applications. Writes and compiles basic code and constructs basic database objects based on documented design. Modifies or upgrades applications to maintain software functionality. Assists in gathering information to determine architecture specifications, parameters for software compatibility, application security needs and other application architecture requirements.
+                    <br />
+                    <br />
+                    <strong>Salary:</strong>
+                    $58K-$78K
+                </span>
+            </div>
+
+            <div id="content-3">
+                <h2>Employer 3: G4S - Software Developer Analyst</h2>
+                <span>
+                    <br />
+                    <br />
+                    <strong>Location:</strong>
+                    Jupiter, FL
+                    <br />
+                    <br />
+                    <strong>Job Description:</strong>
+                    Work with cross-functional teams in understanding business needs and delivering high-quality computer system features and capabilities. They would also perform system-analysis and functional testing to troubleshoot application production issues, and prepare technical software design documentation. Software Developer Analyst would operate as a spokesperson for IT as they interact with business functional areas. The candidate would also perform the analysis role in data mining, reporting, and querying for various purposes.
+                    <br />
+                    <br />
+                    <strong>Salary:</strong>
+                    $49K-$76K
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="lightbox">
+        <div class="row">
+            <div class="column">
+                <img src="H:\HTML\BinderStructure\Awards\Honor Roll Award Quarter 1 2018-19.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="H:\HTML\BinderStructure\Awards\Honor Roll Award Quarter 2 2018-19.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="H:\HTML\BinderStructure\Awards\Honor Roll Award Quarter 4 2018-19.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="H:\HTML\BinderStructure\Awards\Leadership_Award.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="H:\HTML\BinderStructure\Awards\OSHA Certificate.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="H:\HTML\BinderStructure\Awards\Ready to Work Courseware.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="H:\HTML\BinderStructure\Awards\Outstanding Worker Award 2019.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+            </div>
+        </div>
+
+        <div id="Award_modal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlide">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="H:\HTML\BinderStructure\Awards\Honor Roll Award Quarter 1 2018-19.png" style="width:100%">
+                </div>
+
+                <div class="mySlide">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="H:\HTML\BinderStructure\Awards\Honor Roll Award Quarter 2 2018-19.png" style="width:100%">
+                </div>
+
+                <div class="mySlide">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="H:\HTML\BinderStructure\Awards\Honor Roll Award Quarter 4 2018-19.png" style="width:100%">
+                </div>
+
+                <div class="mySlide">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="H:\HTML\BinderStructure\Awards\Leadership_Award.png" style="width:100%">
+                </div>
+
+                <div class="mySlide">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="H:\HTML\BinderStructure\Awards\OSHA Certificate.png" style="width:100%">
+                </div>
+
+                <div class="mySlide">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="H:\HTML\BinderStructure\Awards\Ready to Work Courseware.png" style="width:100%">
+                </div>
+
+                <div class="mySlide">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="H:\HTML\BinderStructure\Awards\Outstanding Worker Award 2019.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="letters">
+        <div class="collapse1">
+            <input id="toggle" class="tog" type="checkbox" />
+            <label class="label1" for="toggle">Resume</label>
+
+            <div id="panel-collapse">
+                <a href="https://docs.google.com/document/d/1q_t1icmBNG3a5NPeJ8I00belsYOdjuK71QLPM15xS_c/edit?usp=sharing" target="_blank">Resume</a>
+            </div>
+
+        </div>
+
+        <div class="collapse2">
+            <input id="oaky" class="tog" type="checkbox" />
+            <label class="label2" for="oaky">Cover Letter</label>
+
+            <div id="panel-collapse2">
+                <a href="https://docs.google.com/document/d/1YuFEUEZY-Cl86fd0qX9M3RFOr367mCGCpJ1V9QMF8_I/edit?usp=sharing" target="_blank">Cover Letter</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="education">
+
+        <input id="tab-12" type="radio" name="tabs" />
+        <label for="tab-12">Education 1</label>
+
+        <input id="tab-22" type="radio" name="tabs" />
+        <label for="tab-22">Education 2</label>
+
+        <input id="tab-32" type="radio" name="tabs" />
+        <label for="tab-32">Education 3</label>
+
+        <div class="content2">
+            <div id="content-12">
+                <h2>College: Edinboro University</h2>
+                <span>
+                    <br />
+                    <br />
+                    <strong>Type:</strong>
+                    2-year Associate's Degree
+                    <br />
+                    <br />
+                    <strong>Description:</strong>
+                    The curriculum in our Theoretical track is rigorous, but for good reason. It’s designed around national curriculum models, employment opportunities and admissions requirements for graduate schools.
+                    <br />
+                    During this time, you’ll learn the basic principles of computer science, programming and systems operation. You’ll also take a variety of general education courses that provide you with critical thinking and writing skills.                    <br />
+                    <br />
+                </span>
+            </div>
+
+            <div id="content-22">
+                <h2>College: Gannon University</h2>
+                <span>
+                    <br />
+                    <br />
+                    <strong>Type:</strong>
+                    4-year Bachelor's Degree
+                    <br />
+                    <br />
+                    <strong>Description:</strong>
+                    Computer and Information Science (CIS) has been one of the most dynamic fields in recent decades. With growing demand for computing professionals, the program is designed to provide advanced studies for those who wish to continue preparation for effective participation in computing professions. The program provides continuing education in advanced subjects for CIS professionals who wish to stay abreast of the rapidly changing technological world. Emphasis is placed on the development of the student's skill for independent study and continued professional growth.
+                    <br />
+                </span>
+            </div>
+
+            <div id="content-32">
+                <h2>College: Penn State University</h2>
+                <span>
+                    <br />
+                    <br />
+                    <strong>Type:</strong>
+                    4-year Bachelor's Degree
+                    <br />
+                    <br />
+                    <strong>Description:</strong>
+                    The B.S. in Computer Science prepares you to meet this goal by giving you a solid foundation in not only system programming, database management, and data visualization, but also the unique and evolving fields of computer game development and cybersecurity. You’ll learn to use algorithms, design efficiencies, and computer system applications to improve the productivity of businesses, industry, education, and government—wherever there is a computer, there is a need for computer scientists.
+                    <br />
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="workSamples">
+
+        <select id="LanguageSelect">
+
+            <option value="#Language1">Excel</option>
+            <option value="#Language2">Access</option>
+            <option value="#Language3">HTML</option>
+            <option value="#Language4">Oracle</option>
+            <option value="#Language5">C++</option>
+            <option value="#Language6">Visual Basic</option>
+
+        </select>
+
+        <div id="LanguageContainer">
+            <div class="languageContent" id="Language1">
+                <ol>
+                    <li>Spreadsheet Example 1</li>
+                    <li>Spreadsheet Example 2</li>
+                    <li>Spreadsheet Example 3</li>
+                </ol>
+            </div>
+
+            <div class="languageContent" id="Language2">
+                <ol>
+                    <li>Access DB Report Example 1</li>
+                    <li>Access DB Report Example 2</li>
+                    <li>Access DB Report Example 3</li>
+                </ol>
+            </div>
+
+            <div class="languageContent" id="Language3">
+                <ol>
+                    <li>Webpage Example 1</li>
+                    <li>Webpage Example 2</li>
+                    <li>Webpage Example 3</li>
+                </ol>
+            </div>
+
+            <div class="languageContent" id="Language4">
+                <ol>
+                    <li>Oracle Example 1</li>
+                    <li>Oracle Example 2</li>
+                    <li>Oracle Example 3</li>
+                </ol>
+            </div>
+
+            <div class="languageContent" id="Language5">
+                <ol>
+                    <li>C++ Example 1</li>
+                    <li>C++ Example 2</li>
+                    <li>C++ Example 3</li>
+                </ol>
+            </div>
+
+            <div class="languageContent" id="Language6">
+                <ol>
+                    <li>Visual Basic Example 1</li>
+                    <li>Visual Basic Example 2</li>
+                    <li>Visual Basic Example 3</li>
+                </ol>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        //lightbox controls
+        function openModal() {
+            document.getElementById("Award_modal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("Award_modal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlide");
+            if (n > slides.length) {
+                console.log(slides.length);
+                slideIndex = 1
+            }
+            if (n < 1) {
+                console.log(slides.length);
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+                 /*$('.back').click(function () {
+
+                 })*/
+    </script>
+
+</body>
+
+</html>

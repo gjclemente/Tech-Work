@@ -1,0 +1,433 @@
+﻿
+/* #1B1B1E background color */
+body {
+    background-color: #1B1B1E;
+}
+
+.menu {
+    width: 150px;
+    height: 160px;
+    /*border: solid;
+            border-width: 0.5px;
+            color: #393e46;*/
+    margin-right: 60px;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-out;
+    transform-origin: 0 0;
+}
+
+.menu:hover .box {
+    transform: rotateY(-90deg);
+    cursor: pointer;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    transform-origin: 0 0;
+    position: absolute;
+}
+
+.front {
+    transform: rotateY(0deg);
+    background-color: #393e46;
+    text-align: center;
+    position: center;
+}
+
+.back {
+    transform: rotateY(90deg);
+    left: 80px;
+    background-color: #2e2e2e; /*#D8DBE2*/
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Barlow', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    margin: auto;
+}
+
+.menu-bar {
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 200px;
+    display: inline-block;
+}
+
+i {
+    padding-top: 40px;
+    color: #A9BCD0;
+    background-color: #393e46;
+}
+
+.title-head {
+    margin-top: 60px;
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Barlow', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*border: solid;*/
+    margin: auto;
+    border-width: 6px;
+    width: 1000px;
+    align-content: center;
+    padding: 30px;
+    margin-top: 20px;
+    background-color: #393e46;
+    border-radius: 4px;
+    color: #D8DBE2;
+    border-color: #A9BCD0;
+    margin-top: 100px;
+}
+
+p {
+    margin: auto;
+    text-align: center;
+    background-color: #2e2e2e;
+    color: #A9BCD0;
+}
+
+.content {
+    background: #393e46;
+    color: #D8DBE2; /*#A9BCD0*/
+    backface-visibility: hidden;
+    overflow: hidden;
+    width: 1000px;
+    height: 874px;
+    font-size: 2em;
+    font-family: 'Barlow', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+    .content > div {
+        display: none;
+        padding: 20px 25px 5px;
+    }
+
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    padding: 25px 35px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    transition: all .3s ease-out 0.1s;
+    color: #A9BCD0;
+    font-size: 30px;
+    font-family: 'Barlow', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+    label:hover {
+        color: #D8DBE2;
+        cursor: pointer;
+    }
+
+input:checked + label {
+    background: #393e46;
+    color: #58A4B0;
+    border-bottom: 1px solid;
+}
+
+#tab-1:checked ~ .content #content-1,
+#tab-2:checked ~ .content #content-2,
+#tab-3:checked ~ .content #content-3 {
+    display: inline-block;
+    animation-name: inUp;
+    animation-timing-function: ease-in-out;
+    animation-duration: .6s;
+}
+
+@media screen and (max-width: 10px) {
+    label {
+        padding: 15px 10px
+    }
+}
+
+@keyframes inUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px)
+    }
+
+    90% {
+        transform: translateY(-10px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+#employers {
+    display: inline-block;
+    margin: auto;
+    margin-left: 70px;
+}
+
+.row > .column {
+    padding: 0 2px;
+}
+
+.row:after {
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: unset;
+    width: 25%;
+    display: inline-block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    opacity: 1;
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #D8DBE2;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.mySlide:hover {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #D8DBE2;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+img.hover-shadow {
+    transition: 0.3s;
+    width: 50%;
+    height: auto;
+    padding-bottom: 2px;
+    padding-right: 2px;
+}
+
+.hover-shadow:hover {
+    cursor: pointer;
+    display: inline-block;
+}
+
+#lightbox {
+    padding-top: 30px;
+    margin-left: 372px;
+}
+
+.tog {
+    display: none;
+    visibility: hidden;
+}
+
+.label1 {
+    cursor: pointer;
+    display: block;
+    padding: .8em;
+    width: 1100px;
+    border: 1px solid;
+    border-color: #58A4B0;
+}
+
+.label2 {
+    cursor: pointer;
+    display: block;
+    padding: .8em;
+    width: 1100px;
+    border: 1px solid;
+    border-color: #58A4B0;
+}
+
+#panel-collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.15s ease-out;
+    background: #393e46;
+    padding: 0 0.9em;
+    width: 1107px;
+    font-family: 'Barlow', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #D8DBE2; /*#A9BCD0*/
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#toggle:checked ~ #panel-collapse {
+    max-height: 100px;
+    padding: 0 0.9em;
+    transition: all 0.25s ease-in;
+    width: 1107px;
+    height: 300px;
+    background-color: #393e46;
+    padding-top: 50px;
+}
+
+#panel-collapse2 {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.15s ease-out;
+    padding: 0 0.9em;
+    width: 1107px;
+    color: #D8DBE2; /*#A9BCD0*/
+    font-size: 1.5em;
+    font-family: 'Barlow', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+#oaky:checked ~ #panel-collapse2 {
+    max-height: 100px;
+    padding: 0 0.9em;
+    transition: all 0.25s ease-in;
+    width: 1107px;
+    height: 300px;
+    background-color: #393e46;
+    padding-top: 50px;
+}
+
+.collapse1 {
+    padding-top: 30px;
+    margin-left: 372px;
+}
+
+.collapse2 {
+    padding-top: 30px;
+    margin-left: 372px;
+}
+
+a {
+    color: #D8DBE2; /*#A9BCD0*/
+    font-size: 2em;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1B1B1E; /*#A9BCD0*/
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.content2 {
+    background: #393e46;
+    color: #D8DBE2; /*#A9BCD0*/
+    backface-visibility: hidden;
+    overflow: hidden;
+    width: 1000px;
+    height: 874px;
+    font-size: 2em;
+    font-family: 'Barlow', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content2 > div {
+    display: none;
+    padding: 20px 25px 5px;
+}
+
+
+#tab-12:checked ~ .content2 #content-12,
+#tab-22:checked ~ .content2 #content-22,
+#tab-32:checked ~ .content2 #content-32 {
+    display: inline-block;
+    animation-name: inUp;
+    animation-timing-function: ease-in-out;
+    animation-duration: .6s;
+}
+
+#education {
+    display: inline-block;
+    margin: auto;
+    margin-left: 372px;
+    margin-top: 30px;
+}
+
+#workSamples {
+    margin: 25px;
+    width: 90%;
+    color: white;
+}
+
+#workSamples select {
+    margin: 20px;
+}
+
+
+#LanguageSelect {
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+#LanguageContainer {
+    margin: 20px;
+}
+
+.languageContent {
+    display: none;
+}
+
+.languageContent::after {
+    display: block;
+    color:white;
+}
